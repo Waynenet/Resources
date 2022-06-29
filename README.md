@@ -1,5 +1,6 @@
 # blog-image-bed
 
-博客图床
+图床
 
-https://3301.cf/
+WayneのHome：https://soga.ml/
+WayneのBlog: https://ggyy.ga/
