@@ -123,8 +123,7 @@
       { "icon": "<img src=\"https://npm.elemecdn.com/wayne-img@latest/blog/emotion/menhera-chan/SR_68.jpg\">", "text": "SR_68" },
       { "icon": "<img src=\"https://npm.elemecdn.com/wayne-img@latest/blog/emotion/menhera-chan/SR_67.jpg\">", "text": "SR_67" },
       { "icon": "<img src=\"https://npm.elemecdn.com/wayne-img@latest/blog/emotion/menhera-chan/SR_66.jpg\">", "text": "SR_66" }
-    ],
-    "maxHeight": "300px"
+    ]
   },
   "颜文字": {
     "type": "emoticon",
