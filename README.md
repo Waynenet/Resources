@@ -1,6 +1,6 @@
-# blog-image-bed
+# Resources
 
-图床
+图床，网站资源
 
 WayneのHome：https://soga.ml/
 
