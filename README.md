@@ -2,6 +2,6 @@
 
 图床，网站资源
 
-WayneのHome：https://soga.ml/
+➡️ WayneのHome：https://kong.pub/       
 
-WayneのBlog: https://ggyy.ga/
+➡️ WayneのBlog: https://blog.kong.pub/
