@@ -1,6 +1,6 @@
 {
-  "name": "wayne-img",
-  "version": "1.0.2",
+  "name": "resources",
+  "version": "1.0.3",
   "description": "静态资源仓库",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Waynenet/blog-image-bed.git"
+    "url": "git+https://github.com/Waynenet/Resources.git"
   },
   "keywords": [
     "图床"
@@ -16,7 +16,7 @@
   "author": "Wayne",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Waynenet/blog-image-bed/issues"
+    "url": "https://github.com/Waynenet/Resources/issues"
   },
-  "homepage": "https://github.com/Waynenet/blog-image-bed#readme"
+  "homepage": "https://github.com/Waynenet/Resources#readme"
 }
