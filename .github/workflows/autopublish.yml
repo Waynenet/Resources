@@ -58,7 +58,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
 
       - name: Publish to NPM
-          if: ${{ secrets.NPM_TOKEN }}
+          if:${{ secrets.NPM_TOKEN }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
