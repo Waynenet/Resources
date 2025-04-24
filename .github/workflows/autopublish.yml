@@ -20,32 +20,27 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-          registry-url: 'https://registry.npmjs.org'
+      - name: Get yarn cache
+        id: yarn-cache-dir-path
+        run: |
+          echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
 
-      - name: Get yarn cache directory
-        id: yarn-cache
-        run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
-
-      - name: Cache yarn dependencies
+      - name: Cache dependencies
         uses: actions/cache@v4
+        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
         with:
-          path: ${{ steps.yarn-cache.outputs.dir }}
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
+      - name: Set Node.js
+        uses: actions/setup-node@master
+        with:
+          node-version: ${{ matrix.node-version }}
 
-      - name: Build project
-        run: yarn build
-
-      - name: Bump version automatically
-        uses: phips28/gh-action-bump-version@master
+      - name: 'Automated Version Bump'
+        uses: 'phips28/gh-action-bump-version@master'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
